@@ -10,6 +10,15 @@
 </head>
 <body>
 	<div id="header"><span>1024小游戏，react实现</span></div>
+	<div id="intro">
+		<p>游戏说明：</p>
+		<span>
+			该款小游戏使用react开发，使用键盘上的方向键进行控制，<br>
+			相同数字可以合并为两数字的和，合并的数字越多分数越高。<br>
+			快去挑战吧！
+
+		</span>
+	</div>
 	<div id="main"></div>
 	<script type="text/babel">
 		
@@ -195,7 +204,7 @@
 		                Score: {score_board(this.state)}{status}
 		            </span>
 		            <Tiles board={this.state}/>
-		            <button onClick={this.newGame}>New Game</button>
+		            <button className="button btn" onClick={this.newGame}>New Game</button>
 		        </div>);
 		    }
 		});
